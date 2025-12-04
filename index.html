@@ -39,7 +39,7 @@
       max-width: 75%;
       /* MÁS ANCHO */
       background: var(--fondo);
-      border-radius: 6%;
+      border-radius: 60px;
       /* MÁS REDONDO */
       padding: 10% 8%;
       /* MÁS PADDING */
@@ -75,18 +75,22 @@
     }
 
     .cinta-superior {
-      text-align: center;
-      font-size: 100%;
-      text-transform: uppercase;
-      color: var(--azul);
-      margin-bottom: 5%;
-    }
+  width: 90%; /* Se ajusta al tamaño de la pantalla */
+  max-width: 900px; /* Evita que se vea demasiado ancho en pantallas grandes */
+  margin: auto;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--azul);
+
+  font-size: clamp(1rem, 2.5vw, 1.8rem);
+  line-height: 1.3;
+}
 
     .cita {
       text-align: center;
       font-size: 80%;
-      margin-bottom: 3%;
-      line-height: 1.5;
+      margin-bottom: 10%;
+      line-height: 1;
     }
 
     .iniciales {
@@ -448,7 +452,7 @@
 
       <!-- CITA -->
       <p class="cita">
-        “El que encontró esposa encontró el bien y <br>alcanzó la benevolencia del Señor.”<br>
+        “El que encontró esposa encontró el bien y alcanzó la benevolencia del Señor.”<br>
         Proverbios 18:22
       </p>
 
